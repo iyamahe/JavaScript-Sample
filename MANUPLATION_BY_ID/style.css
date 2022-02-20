@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to top right,
+    rgb(74, 128, 172),
+    rgb(120, 188, 209)
+  );
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  min-height: 50vh;
+  width: 50vh;
+  /* background: linear-gradient(to right top, rgba(81, 130, 170, 0.568) 30%, rgba(255, 3, 3, 0.411)); */
+  background-color: rgba(82, 44, 170, 0.26);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h1 {
+  text-transform: capitalize;
+  padding: 1em;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button {
+  background: none;
+  padding: 1em 2em;
+  border: 2px solid rgb(107, 211, 180);
+  text-transform: uppercase;
+  color: rgb(23, 10, 70);
+  transition: 0.3s all;
+}
+button:hover {
+  border: 2px solid rgb(166, 222, 255);
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 0.2em;
+}

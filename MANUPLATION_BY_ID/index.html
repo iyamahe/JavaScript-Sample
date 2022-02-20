@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>color changer</h1>
+      <div class="buttons">
+        <!-- HERE I M GIVING ID'S T0 BUTTONS -->
+        <button id="red" onclick="Red()">red</button>
+        <button id="pink" onclick="Pink()">pink</button>
+        <button id="green" onclick="Green()">green</button>
+      </div>
+      <button id="reset" onclick="Reset()">reset</button>
+    </main>
+    <script>
+      // HERE INSIDE JAVA-SCRIPT I AM ADDING DYNAMIC BEHAVIOUR TO BUTTONS BY USING JAVA-SCRIPT ID MANUPLATION
+      function Pink() {
+        // HERE I M MANUPLATING THIS BUTTON AND CHANGING IT'S CSS PROPERTY BY USE OF METHOD AND PROPERTIES
+        pink.style.background = "pink";
+        pink.style.color = "red";
+      }
+      function Red() {
+        red.style.background = "rgb(224, 92, 92)";
+        red.style.color = "pink";
+      }
+      function Green() {
+        green.style.background = "rgb(116, 230, 192)";
+        green.style.color = "rgb(61, 54, 104)";
+      }
+      function Reset() {
+        red.style.background = "rgba(82, 44, 170, 0.26)";
+        red.style.color = "rgb(23, 10, 70)";
+        pink.style.background = "rgba(82, 44, 170, 0.26)";
+        pink.style.color = "rgb(23, 10, 70)";
+        green.style.background = "rgba(82, 44, 170, 0.26)";
+        green.style.color = "rgb(23, 10, 70)";
+      }
+    </script>
+  </body>
+</html>
